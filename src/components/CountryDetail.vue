@@ -1,6 +1,13 @@
 <template lang="html">
 
-    <div>Click Event!</div>
+    <div v-if='country'>
+        <p>
+        <h3>{{ country.name }}</h3>
+        <p>{{ country.capital }}</p>
+        <p>{{ country.population }}</p>
+        <p>{{ country.area }}</span></p>
+        </p>
+    </div>
   
 </template>
 
