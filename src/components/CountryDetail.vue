@@ -1,12 +1,12 @@
 <template lang="html">
 
     <div v-if='country'>
-        <p>
+        <div class="main">
         <h3>{{ country.name }}</h3>
-        <p>{{ country.capital }}</p>
-        <p>{{ country.population }}</p>
-        <p>{{ country.area }}</span></p>
-        </p>
+        <p><span>Capital:</span> {{ country.capital }}</p>
+        <p><span>Pop.:</span> {{ country.population }}</p>
+        <p><span>Area:</span> {{ country.area }} km<sup>2</sup></p>
+        </div>
     </div>
   
 </template>
@@ -19,4 +19,22 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+    .main {
+        width: 250px;
+        margin-top: 15px;
+        padding: 10px 20px 10px 20px;
+        background-color: rgb(230, 230, 230);
+        border: 5px solid rgb(66, 66, 66);
+    }
+
+    h3 {
+        text-transform: uppercase;
+        color: seagreen;
+    }
+
+    span {
+        font-weight: bold;
+    }
+
 </style>

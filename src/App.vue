@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       countries: [],
-      selectedCountry: null
+      selectedCountry: 'Afghanistan'
     };
   },
   mounted() {
@@ -40,9 +40,16 @@ export default {
 
 <style lang="css" scoped>
 
-  .main-container {
-    display: flex;
-    justify-content: space-between;
+  h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
   }
 
+  .main-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  
 </style>
