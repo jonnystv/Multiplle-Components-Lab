@@ -1,4 +1,6 @@
-# multi_components_countries_hw
+# Multiple Components Lab
+
+ create a Vue app with multiple components and templates
 
 ## Project setup
 ```
